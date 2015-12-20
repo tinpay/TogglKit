@@ -2,8 +2,8 @@
 //  Toggl.swift
 //  TogglKit
 //
-//  Created by cw_fukui on 2015/10/03.
-//  Copyright © 2015年 ChatWork. All rights reserved.
+//  Created by tinpay on 2015/10/03.
+//  Copyright © 2015年 tinpay. All rights reserved.
 //
 
 import APIKit

@@ -3,7 +3,7 @@
 //  TogglKit
 //
 //  Created by tinpay on 2015/09/11.
-//  Copyright (c) 2015年 tinpay. All rights reserved.
+//  Copyright © 2015年 tinpay. All rights reserved.
 //
 import APIKit
 import Himotoki

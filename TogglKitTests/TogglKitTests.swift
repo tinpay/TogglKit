@@ -2,7 +2,7 @@
 //  TogglKitTests.swift
 //  TogglKitTests
 //
-//  Created by cw_fukui on 2015/11/16.
+//  Created by tinpay on 2015/11/16.
 //  Copyright © 2015年 tinpay. All rights reserved.
 //
 
