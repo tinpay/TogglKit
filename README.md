@@ -1,5 +1,5 @@
 [![GitHub release](https://img.shields.io/github/release/tinpay/TogglKit.svg)](https://github.com/tinpay/TogglKit/releases)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 
 # TogglKit
