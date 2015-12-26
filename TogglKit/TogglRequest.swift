@@ -48,7 +48,8 @@ public class TimeEntriesRequest:TogglRequest {
     
     public var parameters: [String: AnyObject] {
         let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss+09:00"
+        dateFormatter.calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
         return [
             "start_date": dateFormatter.stringFromDate(startDate),
             "end_date": dateFormatter.stringFromDate(endDate)
