@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum TogglError: ErrorType,CustomStringConvertible {
+public enum TogglError: ErrorType {
     case InvalidToken
     case OtherError(String)
     public init(rawText: String) {

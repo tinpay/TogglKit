@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		254BE97A1C3D75F5003A13B2 /* TogglError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254BE9791C3D75F5003A13B2 /* TogglError.swift */; };
 		2550E6D91BFA1FE700DE54A5 /* TogglKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2550E6D81BFA1FE700DE54A5 /* TogglKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2550E6E01BFA1FE700DE54A5 /* TogglKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2550E6D51BFA1FE700DE54A5 /* TogglKit.framework */; };
 		2550E6E51BFA1FE700DE54A5 /* TogglKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2550E6E41BFA1FE700DE54A5 /* TogglKitTests.swift */; };
@@ -31,7 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		25303A571C26D66700D93979 /* Demo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Demo.playground; sourceTree = "<group>"; };
+		254BE9791C3D75F5003A13B2 /* TogglError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TogglError.swift; sourceTree = "<group>"; };
 		2550E6D51BFA1FE700DE54A5 /* TogglKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TogglKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2550E6D81BFA1FE700DE54A5 /* TogglKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TogglKit.h; sourceTree = "<group>"; };
 		2550E6DA1BFA1FE700DE54A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,7 +84,6 @@
 		2550E6CB1BFA1FE700DE54A5 = {
 			isa = PBXGroup;
 			children = (
-				25303A571C26D66700D93979 /* Demo.playground */,
 				2550E6D71BFA1FE700DE54A5 /* Sources */,
 				2550E6E31BFA1FE700DE54A5 /* TogglKitTests */,
 				2550E6D61BFA1FE700DE54A5 /* Products */,
@@ -106,6 +106,7 @@
 			children = (
 				2550E6D81BFA1FE700DE54A5 /* TogglKit.h */,
 				2550E6EF1BFA203800DE54A5 /* Toggl.swift */,
+				254BE9791C3D75F5003A13B2 /* TogglError.swift */,
 				2550E6F01BFA203800DE54A5 /* TogglRequest.swift */,
 				2550E6F11BFA203800DE54A5 /* TogglResponse.swift */,
 				2550E6DA1BFA1FE700DE54A5 /* Info.plist */,
@@ -282,6 +283,7 @@
 			files = (
 				2550E6F21BFA203800DE54A5 /* Toggl.swift in Sources */,
 				2550E6F31BFA203800DE54A5 /* TogglRequest.swift in Sources */,
+				254BE97A1C3D75F5003A13B2 /* TogglError.swift in Sources */,
 				2550E6F41BFA203800DE54A5 /* TogglResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
