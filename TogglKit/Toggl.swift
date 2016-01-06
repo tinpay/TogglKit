@@ -14,14 +14,14 @@ public class Toggl:Session {
 
 extension Toggl {
 
-    public class func request<T:TogglRequest>(request: T,completion: (result:Result<T.Response,APIError> )->Void) -> Void {
+    public class func request<T:TogglRequest>(request: T,completion: (result:Result<T.Response,TogglError> )->Void) -> Void {
         
         sendRequest(request) {result in
             switch result {
             case .Success(let response):
                 completion(result: .Success(response))
-            case .Failure(let error):
-                completion(result: .Failure(error))
+            case .Failure(let _):
+                completion(result: .Failure(TogglError(rawText:"error")))
             }
         }
     }
