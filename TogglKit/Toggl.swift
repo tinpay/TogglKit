@@ -10,19 +10,18 @@ import APIKit
 import Result
 
 public class Toggl:Session {
-}
-
-extension Toggl {
-
-    public class func request<T:TogglRequest>(request: T,completion: (result:Result<T.Response,TogglError> )->Void) -> Void {
-        
+    public static var token:String?
+    
+    public class func request<T:TogglRequest>(var request: T,completion: (result:Result<T.Response,TogglError> )->Void) -> Void {
+        request.token = self.token
         sendRequest(request) {result in
             switch result {
             case .Success(let response):
                 completion(result: .Success(response))
-            case .Failure(let _):
+            case .Failure(_):
                 completion(result: .Failure(TogglError(rawText:"error")))
             }
         }
     }
 }
+

@@ -49,3 +49,20 @@ public struct Project: Decodable {
         )
     }
 }
+
+
+public struct Workspace: Decodable {
+    public let id:Int
+    public let name:String
+    public let premium:Bool
+    public let admin:Bool
+    
+    public static func decode(e: Extractor) throws -> Workspace {
+        return try build(Workspace.init)(
+            e <| "id",
+            e <| "name",
+            e <| "premium",
+            e <| "admin"
+        )
+    }
+}
