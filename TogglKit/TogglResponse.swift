@@ -31,6 +31,8 @@ public struct TimeEntry: Decodable {
 }
 
 public struct Project: Decodable {
+    public let id:Int
+    public let cid:Int?
     public let name:String
     public let billable:Bool
     public let isPrivate:Bool
@@ -40,6 +42,8 @@ public struct Project: Decodable {
     
     public static func decode(e: Extractor) throws -> Project {
         return try build(Project.init)(
+            e <| "id",
+            e <|? "cid",
             e <| "name",
             e <| "billable",
             e <| "is_private",
@@ -63,6 +67,20 @@ public struct Workspace: Decodable {
             e <| "name",
             e <| "premium",
             e <| "admin"
+        )
+    }
+}
+
+public struct Client: Decodable {
+    public let id:Int
+    public let name:String
+    public let notes:String?
+    
+    public static func decode(e: Extractor) throws -> Client {
+        return try build(Client.init)(
+            e <| "id",
+            e <| "name",
+            e <|? "notes"
         )
     }
 }

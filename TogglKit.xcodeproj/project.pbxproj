@@ -14,11 +14,9 @@
 		2550E6F21BFA203800DE54A5 /* Toggl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2550E6EF1BFA203800DE54A5 /* Toggl.swift */; };
 		2550E6F31BFA203800DE54A5 /* TogglRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2550E6F01BFA203800DE54A5 /* TogglRequest.swift */; };
 		2550E6F41BFA203800DE54A5 /* TogglResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2550E6F11BFA203800DE54A5 /* TogglResponse.swift */; };
-		2550E7131BFA33E700DE54A5 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2550E7121BFA33E700DE54A5 /* APIKit.framework */; };
-		2550E7301BFA3B9D00DE54A5 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2550E72E1BFA3B9D00DE54A5 /* Himotoki.framework */; };
-		2550E7311BFA3B9D00DE54A5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2550E72F1BFA3B9D00DE54A5 /* Result.framework */; };
-		2550E7341BFA3BB000DE54A5 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2550E7321BFA3BB000DE54A5 /* APIKit.framework */; };
-		2550E7351BFA3BB000DE54A5 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2550E7331BFA3BB000DE54A5 /* Himotoki.framework */; };
+		25BFE7A51CC31D940072C524 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BFE7A21CC31D940072C524 /* APIKit.framework */; };
+		25BFE7A61CC31D940072C524 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BFE7A31CC31D940072C524 /* Himotoki.framework */; };
+		25BFE7A71CC31D940072C524 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BFE7A41CC31D940072C524 /* Result.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,12 +40,10 @@
 		2550E6EF1BFA203800DE54A5 /* Toggl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toggl.swift; sourceTree = "<group>"; };
 		2550E6F01BFA203800DE54A5 /* TogglRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TogglRequest.swift; sourceTree = "<group>"; };
 		2550E6F11BFA203800DE54A5 /* TogglResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TogglResponse.swift; sourceTree = "<group>"; };
-		2550E7121BFA33E700DE54A5 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = SOURCE_ROOT; };
 		2550E7261BFA34AB00DE54A5 /* TogglKit-Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "TogglKit-Mac.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2550E72E1BFA3B9D00DE54A5 /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = SOURCE_ROOT; };
-		2550E72F1BFA3B9D00DE54A5 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = SOURCE_ROOT; };
-		2550E7321BFA3BB000DE54A5 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/Mac/APIKit.framework; sourceTree = SOURCE_ROOT; };
-		2550E7331BFA3BB000DE54A5 /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/Mac/Himotoki.framework; sourceTree = SOURCE_ROOT; };
+		25BFE7A21CC31D940072C524 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = SOURCE_ROOT; };
+		25BFE7A31CC31D940072C524 /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = SOURCE_ROOT; };
+		25BFE7A41CC31D940072C524 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +51,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2550E7131BFA33E700DE54A5 /* APIKit.framework in Frameworks */,
-				2550E7301BFA3B9D00DE54A5 /* Himotoki.framework in Frameworks */,
-				2550E7311BFA3B9D00DE54A5 /* Result.framework in Frameworks */,
+				25BFE7A51CC31D940072C524 /* APIKit.framework in Frameworks */,
+				25BFE7A61CC31D940072C524 /* Himotoki.framework in Frameworks */,
+				25BFE7A71CC31D940072C524 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,8 +69,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2550E7341BFA3BB000DE54A5 /* APIKit.framework in Frameworks */,
-				2550E7351BFA3BB000DE54A5 /* Himotoki.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,11 +121,9 @@
 		2550E7111BFA258B00DE54A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2550E7321BFA3BB000DE54A5 /* APIKit.framework */,
-				2550E7331BFA3BB000DE54A5 /* Himotoki.framework */,
-				2550E72E1BFA3B9D00DE54A5 /* Himotoki.framework */,
-				2550E72F1BFA3B9D00DE54A5 /* Result.framework */,
-				2550E7121BFA33E700DE54A5 /* APIKit.framework */,
+				25BFE7A21CC31D940072C524 /* APIKit.framework */,
+				25BFE7A31CC31D940072C524 /* Himotoki.framework */,
+				25BFE7A41CC31D940072C524 /* Result.framework */,
 			);
 			name = Frameworks;
 			path = TogglKit;
@@ -415,9 +407,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)Sample/TogglKitSample/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = TogglKit/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INSTALL_PATH = "@rpath";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tinpay.TogglKit;
@@ -439,9 +432,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)Sample/TogglKitSample/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = TogglKit/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INSTALL_PATH = "@rpath";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tinpay.TogglKit;

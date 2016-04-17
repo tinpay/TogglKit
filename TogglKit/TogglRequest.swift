@@ -47,7 +47,8 @@ public extension TogglRequest where Self: AnyObject {
 }
 
 public class WorkspacesRequest:TogglRequest {
-    
+    public init(){
+    }
     public typealias Response = [Workspace]
     public var method: HTTPMethod {return .GET}
     public var path:String {return "/workspaces"}
@@ -91,6 +92,20 @@ public class ProjectRequest:TogglRequest {
 }
 
 
+public class ClientsRequest:TogglRequest {
+    let workspaceId:Int
+    public init(workspaceId:Int){
+        self.workspaceId = workspaceId
+    }
+    public typealias Response = [Client]
+    public var method: HTTPMethod {return .GET}
+    public var path:String {return "/workspaces/\(workspaceId)/clients"}
+    
+    
+    public func responseFromObject(object:AnyObject, URLResponse: NSHTTPURLResponse) -> Response? {
+        return try? decodeArray(object)
+    }
+}
 
 
 public class TimeEntriesRequest:TogglRequest {
