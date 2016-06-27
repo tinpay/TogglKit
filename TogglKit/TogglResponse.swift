@@ -18,14 +18,14 @@ public struct TimeEntry: Decodable {
     public let tags:[String]?
     
     public static func decode(e: Extractor) throws -> TimeEntry {
-        return try build(TimeEntry.init)(
-            e <| "wid",
-            e <|? "pid",
-            e <| "start",
-            e <|? "stop",
-            e <| "duration",
-            e <| "description",
-            e <||? "tags"
+        return self.init(
+            wid:try e <| "wid",
+            pid:try e <|? "pid",
+            start:try e <| "start",
+            stop:try e <|? "stop",
+            duration:try e <| "duration",
+            description:try e <| "description",
+            tags:try e <||? "tags"
         )
     }
 }
@@ -39,13 +39,13 @@ public struct Project: Decodable {
     public let color:String
     
     public static func decode(e: Extractor) throws -> Project {
-        return try build(Project.init)(
-            e <| "name",
-            e <| "billable",
-            e <| "is_private",
-            e <| "active",
-            e <| "template",
-            e <| "color"
+        return self.init(
+            name:try  e <| "name",
+            billable:try  e <| "billable",
+            isPrivate:try  e <| "is_private",
+            active:try  e <| "active",
+            template:try  e <| "template",
+            color:try  e <| "color"
         )
     }
 }

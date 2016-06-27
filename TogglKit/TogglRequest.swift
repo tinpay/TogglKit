@@ -73,7 +73,7 @@ public class ProjectsRequest:TogglRequest {
     
 
     public func responseFromObject(object:AnyObject, URLResponse: NSHTTPURLResponse) -> Response? {
-        return try? decode(object)
+        return try? decodeValue(object)
     }
 }
 
